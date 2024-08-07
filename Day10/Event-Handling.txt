@@ -1,0 +1,3 @@
+What is Event Handling?
+
+Event Handling refers to the process of managing events in a web application. Events are actions or occurrences that happen in the browser, such as clicks, key presses, or mouse movements. JavaScript allows you to define functions (event handlers) that will be executed when certain events are triggered. This is a key concept for creating interactive web applications.

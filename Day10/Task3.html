@@ -1,0 +1,24 @@
+<!-- Task 3: Add a mouseover event listener to an element that changes its background color. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling Task 3</title>
+</head>
+<body>
+    <div id="colorBox" style="width: 100px; height: 100px; background-color: lightblue;"></div>
+    
+    <script>
+        // Selecting the div by its id
+        const colorBox = dcument.getElementById('colorBox');
+
+        // Define the function that changes the background color of the div
+
+        function changeBackgroundColor() {
+            colorBox.addEventListener('mouseover', changeBackgroundColor);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!-- Task 2: Add a double-click event listener to an image that toggles its visibility. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling Task 2</title>
+</head>
+<body>
+
+    <img src="Day10.png" alt="Sample-Image" width="200" id="toggleImage">
+
+    <script>
+
+        //Select the image element by its ID
+        const imageElement = document.getElementById('toggleImage');
+
+        // Defining the function that toggles the visibility of the image
+
+        function toggleVisibility() {
+            if(imageElement.style.display === 'none'){
+                imageElement.style.display = 'block';
+            }
+            else{
+                imageElement.style.display = 'none';
+            }
+        }
+
+        // Attach the double-click event istener to the image
+        imageElement.addEventListener('dblclick', toggleVisibility);
+
+    </script>   
+</body>
+</html>

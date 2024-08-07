@@ -1,0 +1,29 @@
+<!-- Task 4: Add a mouseout event listener to an element that resets its background color. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling Task 4</title>
+</head>
+<body>
+    <div id="colorBox" style="width: 100px; height: 100px; background-color: lightblue;"></div>
+
+    <script>
+
+        const colorBox = document.getElementById('colorBox');
+        
+         //Defining the function that resets the background color of the div
+        function resetBackgroundColor() {
+            colorBox.style.backgroundColor = 'lightblue';
+        }
+
+        //Attach the mouseover and mouseout event listeners to the div
+        colorBox.addEventListener('mouseover',function(){
+            colorBox.style.backgroundColor = 'lightcoral';
+        });
+        colorBox.addEventListener('mouseout', resetBackgroundColor)
+    </script>
+</body>
+</html>

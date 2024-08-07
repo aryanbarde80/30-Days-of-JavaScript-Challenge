@@ -1,0 +1,34 @@
+<!-- // Activity 1: Selecting and Manipulating Elements
+
+/*
+What is DOM Manipulation?
+DOM (Document Object Model) manipulation involves using JavaScript to interact with and modify the structure, style, and content of HTML elements. This enables dynamic updates to the web page without requiring a full reload.
+*/
+
+// Task 1: Select an HTML element by its ID and change its text content. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="greeting">Hello, World.</p>
+
+    <script>
+        // Selecting the element by ID
+        const greetElement = document.getElementById('greeting');
+
+        // Changing the text context of the selected element
+        greetElement.textContent = 'Hello, JavaScript!';
+
+        // Explanation: document.getElementById selects an element by its ID. 
+        // The textContent property sets or returns the text content of the specified node.
+
+    </script>
+
+</body>
+</html>
+

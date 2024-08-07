@@ -1,0 +1,26 @@
+<!-- Task 2: Select an HTML element by its class and change its background color. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HTML Structure -->
+<div class="box">This is a box.</div>
+
+<!-- JavaScript Code -->
+<script>
+    // Select the element by its class
+    const boxElement = document.querySelector('.box');
+    
+    // Change the background color of the selected element
+    boxElement.style.backgroundColor = 'lightblue';
+    
+    // Explanation: document.querySelector selects the first element that matches a CSS selector. 
+    // The style property accesses or sets inline style properties of an element.
+</script>
+</body>
+</html>

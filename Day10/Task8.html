@@ -1,0 +1,33 @@
+<!-- Task 8: Add a change event listener to a select dropdown that displays the selected value in a paragraph. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling Task 8</title>
+</head>
+<body>
+    <select id="mySelect">
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+        <option value="Option 3">Option 3</option>
+    </select>
+    <p id="selectedValue">Selected: Option 1</p> <!-- Default display value -->
+
+    <!-- JavaScript Code -->
+    <script>
+        // Select the dropdown and paragraph elements by their IDs
+        const mySelect = document.getElementById('mySelect');
+        const selectedValue = document.getElementById('selectedValue');
+
+        // Define the function that displays the selected value in the paragraph
+        function displaySelectedValue() {
+            selectedValue.textContent = `Selected: ${mySelect.value}`;
+        }
+
+        // Attach the change event listener to the dropdown
+        mySelect.addEventListener('change', displaySelectedValue);
+    </script>
+</body>
+</html>

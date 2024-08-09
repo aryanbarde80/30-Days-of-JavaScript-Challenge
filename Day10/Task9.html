@@ -1,0 +1,33 @@
+<!-- Task 9: Add a click event listener to a list. Using event delegation, the event listener logs the text content of the clicked list item.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling Task 9</title>
+</head>
+<body>
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <script>
+        // Selecting the list element by its id
+        const myList = document.getElementById('myList');
+
+        // Defining the function that logs the text content of the clicked list item
+        function logItemText(event) {
+            if (event.target.tagName === 'LI') {
+                // Checking if the clicked element is an LI
+                console.log(`Clicked item: ${event.target.textContent}`);
+            }
+        }
+
+        // Attaching the event listener to the list
+        myList.addEventListener('click', logItemText);
+    </script>
+</body>
+</html>

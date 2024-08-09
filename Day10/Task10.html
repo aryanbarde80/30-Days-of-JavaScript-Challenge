@@ -1,0 +1,39 @@
+<!-- Task 10: Add an event listener to a parent element (a list), which listens for events from dynamically added child elements (list items). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling Task 10</title>
+</head>
+<body>
+    <button id="addButton">Add Item</button>
+    <ul id="dynamicList"></ul>
+
+    <script>
+        const addButton = document.getElementById('addButton');
+        const dynamicList = document.getElementById('dynamicList');
+
+        //defining the function that adds a new list item
+        function addItem() {
+            const newItem = document.createElement('li');
+            newItem.textContent = `Item ${dynamicList.children.length +1}`;
+            dynamicList.appendChild(newItem);
+        }
+
+        function logItemText(event) {
+            if(event.target.tagName === 'LI'){
+                // Check if the clicked element is an LI
+                console.log(`Clicked item: ${event.target.textContent}`);
+            }
+        }
+
+        // Attaching the click event listener to the button
+        addButton.addEventListener('click', addItem);
+
+        // Attaching the click event listener to the list for dynamically added items
+        dynamicList.addEventListener('click', logItemText);
+    </script>
+</body>
+</html>

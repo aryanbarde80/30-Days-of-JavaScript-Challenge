@@ -1,0 +1,5 @@
+Modules allow you to break up your code into separate files and reuse functionality across different parts of your project.
+
+*** Note: All these activity codes are merged codes, use them in diiferent files as commented in them to check the functionality of the code. ***4
+
+** To get separate codes go to the insider folder **
